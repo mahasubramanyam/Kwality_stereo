@@ -25,7 +25,7 @@ export default function Footer() {
             </div>
 
             <p className="text-xs sm:text-sm text-stone-400 leading-relaxed">
-              Manufacturer of custom engraved vulcanized rubber printing plates (rubber stereos) for flexographic and rotogravure sack printing. 
+              Manufacturer of custom hand-engraved vulcanized rubber stereos (rubber printing blocks) for flexographic and rotogravure sack printing. 
               Serving cattle feed brands, poultry feed mills, flour (atta) mills, and fertilizer packaging manufacturers with pan-India dispatches.
             </p>
 
@@ -45,7 +45,7 @@ export default function Footer() {
               <li><a href="#products" className="hover:text-white transition-colors">Products & Capabilities</a></li>
               <li><a href="#industries" className="hover:text-white transition-colors">Industries Served</a></li>
               <li><a href="#gallery" className="hover:text-white transition-colors">Sample Work & Brands</a></li>
-              <li><a href="#estimator" className="hover:text-white transition-colors">Plate Specification Tool</a></li>
+              <li><a href="#estimator" className="hover:text-white transition-colors">Stereo Specification Tool</a></li>
               <li><a href="#locations" className="hover:text-white transition-colors">Locations & Dispatch</a></li>
               <li><a href="#contact" className="hover:text-white transition-colors">Contact Information</a></li>
             </ul>
@@ -61,7 +61,7 @@ export default function Footer() {
               <li>Flour Mill & Atta Bags (Star, Kohinoor)</li>
               <li>Poultry Feed & Mash Sacks</li>
               <li>Fertilizer, Urea & DAP Woven Bags</li>
-              <li>Multi-Language Plates (Tamil, Punjabi, Hindi, Bengali)</li>
+              <li>Multi-Language Stereos (Tamil, Punjabi, Hindi, Bengali)</li>
               <li>Corn, Wheat, Sugarcane & Cattle Borders</li>
               <li>Standard Sizing (L30 x 10 Packs & Copper Stereos)</li>
             </ul>
@@ -105,7 +105,7 @@ export default function Footer() {
         {/* Bottom Disclaimer & Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
           <p>
-            © {new Date().getFullYear()} {BUSINESS_INFO.name}. All rights reserved. Precision rubber printing plates for woven sack packaging.
+            © {new Date().getFullYear()} {BUSINESS_INFO.name}. All rights reserved. Precision hand-engraved rubber stereos for woven sack packaging.
           </p>
 
           <div className="flex items-center gap-4">

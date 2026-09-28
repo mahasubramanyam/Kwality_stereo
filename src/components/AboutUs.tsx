@@ -1,6 +1,6 @@
 import { UserCheck, Truck, Award, CheckCircle2, Factory, Phone, Mail, ArrowRight } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/businessData';
-import sackShowcaseImage from '../assets/images/printed_sack_showcase_1790236056984.jpg';
+import sackShowcaseImage from '../assets/images/real/suvarna-printed-sack.jpg';
 
 export default function AboutUs() {
   return (
@@ -13,7 +13,7 @@ export default function AboutUs() {
             About Mohan & Kwality Stereo
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold font-display tracking-tight text-stone-900">
-            Dedicated Exclusively to High-Precision Rubber Printing Plates for Sack Packaging
+            Dedicated Exclusively to High-Precision Engraved Rubber Stereos for Sack Packaging
           </h2>
           <p className="text-base sm:text-lg text-stone-700 mt-4 leading-relaxed">
             Founded and directed by <strong>Mohan</strong>, Kwality Stereo was established with a singular focus: 
@@ -34,8 +34,8 @@ export default function AboutUs() {
               </h3>
               <p className="text-stone-700 text-sm sm:text-base leading-relaxed">
                 Standard flexographic photopolymer plates often crack or distort when printing on the rough, uneven weave of heavy-duty agricultural sacks. 
-                At <strong>Kwality Stereo</strong>, Mohan and the technical team formulate heavy-gauge vulcanized natural and synthetic rubber stereos. 
-                Our plates deliver the necessary cushion to press ink deep into woven tapes while maintaining crisp, razor-sharp edge definition for logos, Hindi/Tamil/Punjabi typography, and statutory tables.
+                At <strong>Kwality Stereo</strong>, Mohan and the technical team hand-carve and engrave heavy-gauge vulcanized natural and synthetic rubber blocks into precision stereos. 
+                Our stereos deliver the necessary cushion to press ink deep into woven tapes while maintaining crisp, razor-sharp edge definition for logos, Hindi/Tamil/Punjabi typography, and statutory tables.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -94,7 +94,7 @@ export default function AboutUs() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-stone-700">
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
-                  <span><strong>Zero Shrinkage Vulcanization:</strong> Plates maintain pitch dimensions over hundreds of thousands of bag impressions.</span>
+                  <span><strong>Zero Shrinkage Vulcanization:</strong> Stereos maintain pitch dimensions over hundreds of thousands of bag impressions.</span>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
@@ -113,12 +113,12 @@ export default function AboutUs() {
 
           </div>
 
-          {/* Right Column: Visual of printed sack and stereo plate */}
+          {/* Right Column: Visual of a real printed sack from a Kwality Stereo rubber stereo */}
           <div className="lg:col-span-5 space-y-4">
             <div className="rounded-2xl overflow-hidden border border-stone-300 shadow-md bg-white">
               <img
                 src={sackShowcaseImage}
-                alt="Printed woven PP sack bags for cattle feed and atta with Kwality Stereo engraved rubber printing plate"
+                alt="Real cattle feed woven PP sack printed using a Kwality Stereo hand-engraved rubber stereo"
                 className="w-full h-80 sm:h-96 object-cover"
               />
               <div className="p-5 bg-white border-t border-stone-200 text-left">
@@ -133,7 +133,7 @@ export default function AboutUs() {
                   Notice the sharp contrast of the brand headers, cattle figures, and detailed crop borders printed cleanly on textured woven tapes without halos or missing ink dots.
                 </p>
                 <div className="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500">
-                  <span>Plate Durability: 250k - 400k sacks</span>
+                  <span>Stereo Durability: 250k - 400k sacks</span>
                   <a href="#gallery" className="text-amber-700 font-bold hover:underline inline-flex items-center gap-1">
                     Explore Samples <ArrowRight className="w-3.5 h-3.5" />
                   </a>

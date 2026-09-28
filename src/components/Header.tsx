@@ -47,11 +47,11 @@ export default function Header({ onOpenQuote }: HeaderProps) {
                   {BUSINESS_INFO.name}
                 </span>
                 <span className="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                  Est. Packaging Plates
+                  Rubber Stereo Works
                 </span>
               </div>
               <p className="text-xs text-stone-400 font-medium hidden sm:block">
-                Rubber Printing Plates for Woven Sacks & Bags
+                Engraved Rubber Stereos for Woven Sacks & Bags
               </p>
             </div>
           </a>
@@ -62,7 +62,7 @@ export default function Header({ onOpenQuote }: HeaderProps) {
               About Us
             </a>
             <a href="#products" className="hover:text-amber-400 transition-colors">
-              Products & Plates
+              Products & Stereos
             </a>
             <a href="#industries" className="hover:text-amber-400 transition-colors">
               Industries Served
@@ -95,7 +95,7 @@ export default function Header({ onOpenQuote }: HeaderProps) {
               onClick={onOpenQuote}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-stone-950 text-xs sm:text-sm font-bold transition-all shadow-sm"
             >
-              <span>Plate Quote</span>
+              <span>Stereo Quote</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -192,7 +192,7 @@ export default function Header({ onOpenQuote }: HeaderProps) {
               }}
               className="w-full py-2.5 rounded-lg bg-amber-500 text-stone-950 font-bold text-sm"
             >
-              Calculate Plate Specification
+              Calculate Stereo Specification
             </button>
           </div>
         </div>

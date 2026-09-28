@@ -1,6 +1,6 @@
 import { Phone, MessageCircle, ArrowRight, ShieldCheck, Truck, Layers, CheckCircle } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/businessData';
-import heroImage from '../assets/images/rubber_stereo_hero_1790236043913.jpg';
+import heroImage from '../assets/images/real/samrudhi-stereo-hero.jpg';
 
 interface HeroProps {
   onOpenQuote: () => void;
@@ -27,7 +27,7 @@ export default function Hero({ onOpenQuote }: HeroProps) {
             
             {/* Unboxed clean metadata kicker */}
             <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-stone-400 font-medium tracking-wide">
-              <span className="text-amber-400 font-semibold">Industrial Bag Printing Plates</span>
+              <span className="text-amber-400 font-semibold">Engraved Rubber Stereos for Bag Printing</span>
               <span aria-hidden="true" className="text-stone-600">·</span>
               <span>Krishnagiri & Bangalore</span>
               <span aria-hidden="true" className="text-stone-600">·</span>
@@ -36,13 +36,13 @@ export default function Hero({ onOpenQuote }: HeroProps) {
 
             {/* Exact Required Hero Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] font-bold font-display tracking-tight text-white leading-tight">
-              <span className="text-amber-400">Kwality Stereo</span> — Rubber Printing Plate Manufacturer for Packaging Bags
+              <span className="text-amber-400">Kwality Stereo</span> — Rubber Stereo Manufacturer for Packaging Bags
             </h1>
 
             {/* Clear, accurate description */}
             <p className="text-base sm:text-lg text-stone-300 max-w-2xl leading-relaxed">
-              Custom vulcanized, high-relief engraved rubber printing plates (stereos) engineered for rotogravure and flexographic presses. 
-              We build precision plates for <strong>cattle feed bags, poultry feed sacks, flour mill (atta) bags, fertilizer packaging</strong>, and all PP/HDPE woven sack bags.
+              We hand-cut and engrave designs into vulcanized rubber blocks — creating high-relief rubber stereos engineered for rotogravure and flexographic presses. 
+              We build precision stereos for <strong>cattle feed bags, poultry feed sacks, flour mill (atta) bags, fertilizer packaging</strong>, and all PP/HDPE woven sack bags.
             </p>
 
             {/* Prominent Contact Block with Mohan */}
@@ -91,7 +91,7 @@ export default function Hero({ onOpenQuote }: HeroProps) {
                 onClick={onOpenQuote}
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold text-sm sm:text-base transition-all shadow-md"
               >
-                <span>Calculate Plate Specifications</span>
+                <span>Calculate Stereo Specifications</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
               <a
@@ -125,7 +125,7 @@ export default function Hero({ onOpenQuote }: HeroProps) {
             <div className="relative rounded-2xl overflow-hidden border-2 border-stone-700/80 shadow-2xl bg-stone-950 group">
               <img
                 src={heroImage}
-                alt="Precision engraved rubber printing plate stereo for packaging bags by Kwality Stereo"
+                alt="Real engraved rubber stereo hand-carved by Kwality Stereo, mounted on a printing cylinder for packaging bags"
                 className="w-full h-80 sm:h-96 lg:h-[460px] object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/20 to-transparent pointer-events-none" />

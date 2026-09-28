@@ -52,7 +52,7 @@ export default function App() {
         {/* Products & Services (Custom engraving, multi-language, bulk L30x10) */}
         <ProductsServices onOpenQuote={scrollToQuoteEstimator} />
 
-        {/* Interactive Plate-to-Bag Visualizer */}
+        {/* Interactive Stereo-to-Bag Visualizer */}
         <PlateVisualizer />
 
         {/* Industries Served (Cattle Feed, Poultry, Flour Mill, Fertilizer) */}
@@ -70,7 +70,7 @@ export default function App() {
           onOpenQuoteWithItem={handleOpenQuoteWithItem}
         />
 
-        {/* Interactive Plate Specification Estimator & 1-Click WhatsApp */}
+        {/* Interactive Stereo Specification Estimator & 1-Click WhatsApp */}
         <QuoteEstimator initialBagType={quoteEstimatorInitialBag} />
 
         {/* Locations (Krishnagiri & Bangalore, Pan-India Dispatch) */}

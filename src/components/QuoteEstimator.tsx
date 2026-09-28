@@ -9,7 +9,7 @@ interface QuoteEstimatorProps {
 
 export default function QuoteEstimator({ initialBagType, onClose }: QuoteEstimatorProps) {
   const [bagCategory, setBagCategory] = useState(initialBagType || 'cattle-feed-50');
-  const [plateGauge, setPlateGauge] = useState('6.35mm-heavy');
+  const [stereoGauge, setStereoGauge] = useState('6.35mm-heavy');
   const [colorPasses, setColorPasses] = useState('2-color');
   const [selectedLanguages, setSelectedLanguages] = useState<string[]>(['Hindi', 'English']);
   const [borderElements, setBorderElements] = useState<string[]>(['Wheat Border', 'Cattle Silhouette']);
@@ -55,13 +55,13 @@ export default function QuoteEstimator({ initialBagType, onClose }: QuoteEstimat
   };
 
   const currentBag = bagOptions.find((b) => b.id === bagCategory);
-  const currentGauge = gaugeOptions.find((g) => g.id === plateGauge);
+  const currentGauge = gaugeOptions.find((g) => g.id === stereoGauge);
 
   const generateSpecText = () => {
-    return `*KWALITY STEREO - PLATE SPECIFICATION INQUIRY*
+    return `*KWALITY STEREO - RUBBER STEREO SPECIFICATION INQUIRY*
 ---------------------------------------
 • Bag Application: ${currentBag?.name} (${currentBag?.typicalRepeat})
-• Plate Compound/Gauge: ${currentGauge?.name}
+• Rubber Compound/Gauge: ${currentGauge?.name}
 • Color Registration: ${colorPasses.toUpperCase()}
 • Required Languages: ${selectedLanguages.join(', ')}
 • Border Motifs: ${borderElements.length ? borderElements.join(', ') : 'None'}
@@ -90,10 +90,10 @@ Inquiry for Mohan (90490 98150 / saimohan361991@gmail.com)`;
             Instant Engineering Estimator
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold font-display tracking-tight text-white">
-            Configure Your Rubber Stereo Plate Specifications
+            Configure Your Rubber Stereo Specifications
           </h2>
           <p className="text-stone-400 text-sm sm:text-base mt-2">
-            Select your woven sack size, plate gauge, languages, and decorative borders. Send directly to Mohan for immediate turnaround.
+            Select your woven sack size, rubber gauge, languages, and decorative borders. Send directly to Mohan for immediate turnaround.
           </p>
         </div>
 
@@ -126,7 +126,7 @@ Inquiry for Mohan (90490 98150 / saimohan361991@gmail.com)`;
               </div>
             </div>
 
-            {/* 2. Plate Gauge & Material */}
+            {/* 2. Rubber Gauge & Material */}
             <div>
               <label className="block text-xs font-bold uppercase tracking-wider text-amber-400 mb-2">
                 2. Rubber Gauge & Backing Compound
@@ -136,9 +136,9 @@ Inquiry for Mohan (90490 98150 / saimohan361991@gmail.com)`;
                   <button
                     key={gauge.id}
                     type="button"
-                    onClick={() => setPlateGauge(gauge.id)}
+                    onClick={() => setStereoGauge(gauge.id)}
                     className={`p-3 text-left rounded-xl border transition-all ${
-                      plateGauge === gauge.id
+                      stereoGauge === gauge.id
                         ? 'bg-amber-500/20 border-amber-500 text-white shadow-sm'
                         : 'bg-stone-900 border-stone-800 text-stone-300 hover:border-stone-700'
                     }`}
@@ -287,7 +287,7 @@ Inquiry for Mohan (90490 98150 / saimohan361991@gmail.com)`;
                     Live Engineering Brief
                   </span>
                   <h3 className="text-lg font-bold font-display text-white mt-0.5">
-                    Plate Specification Summary
+                    Stereo Specification Summary
                   </h3>
                 </div>
                 <div className="p-2 rounded-lg bg-amber-500/10 text-amber-400">

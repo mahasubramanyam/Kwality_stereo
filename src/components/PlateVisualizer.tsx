@@ -18,7 +18,7 @@ export default function PlateVisualizer() {
             See How an Engraved Rubber Stereo Transfers Onto a Woven Sack
           </h2>
           <p className="text-stone-400 text-sm sm:text-base mt-2">
-            Switch between the <span className="text-amber-400 font-semibold">High-Relief Engraved Rubber Plate</span> (mirror engraved) and the <span className="text-emerald-400 font-semibold">Finished Printed Woven Bag</span>.
+            Switch between the <span className="text-amber-400 font-semibold">High-Relief Engraved Rubber Stereo</span> (mirror engraved) and the <span className="text-emerald-400 font-semibold">Finished Printed Woven Bag</span>.
           </p>
 
           {/* Interactive Controls */}
@@ -34,7 +34,7 @@ export default function PlateVisualizer() {
                 }`}
               >
                 <Layers className="w-4 h-4" />
-                <span>1. Engraved Rubber Stereo (Plate View)</span>
+                <span>1. Engraved Rubber Stereo (Stereo View)</span>
               </button>
               <button
                 onClick={() => setViewMode('printed')}
@@ -85,7 +85,7 @@ export default function PlateVisualizer() {
                 <span className={`w-2.5 h-2.5 rounded-full ${viewMode === 'stereo' ? 'bg-amber-500 animate-pulse' : 'bg-emerald-500'}`} />
                 <span className="font-mono text-stone-300">
                   {viewMode === 'stereo'
-                    ? 'VULCANIZED RUBBER STEREO PLATE (MIRROR ENGRAVED FOR FLEXO)'
+                    ? 'VULCANIZED RUBBER STEREO (MIRROR ENGRAVED FOR FLEXO)'
                     : 'FINISHED PP WOVEN SACK (RIGHT-READING PRINT ON WOVEN TAPE)'}
                 </span>
               </div>
@@ -94,7 +94,7 @@ export default function PlateVisualizer() {
               </span>
             </div>
 
-            {/* Simulated Plate / Bag Frame */}
+            {/* Simulated Stereo / Bag Frame */}
             <div
               className={`relative mx-auto rounded-xl p-6 sm:p-10 border transition-all duration-500 min-h-[460px] flex flex-col justify-between ${
                 viewMode === 'stereo'
@@ -108,7 +108,7 @@ export default function PlateVisualizer() {
                     : undefined
               }}
             >
-              {/* Stereo Plate Specific Registration Marks and Mounting Grids */}
+              {/* Stereo Specific Registration Marks and Mounting Grids */}
               {viewMode === 'stereo' && (
                 <div className="absolute inset-0 pointer-events-none border-2 border-dashed border-red-300/20 m-2 rounded-lg flex items-center justify-between px-3 text-[10px] font-mono text-red-300/40">
                   <div className="flex flex-col justify-between h-full py-4">
@@ -262,7 +262,7 @@ export default function PlateVisualizer() {
                 </span>
                 <p className="text-stone-300 leading-relaxed">
                   {viewMode === 'stereo'
-                    ? 'Printing plates are vulcanized in reverse (mirror-image) relief. When clamped onto the rotating machine cylinder and inked, they press directly into the sack to produce sharp, right-reading graphics.'
+                    ? 'Rubber stereos are cut and engraved in reverse (mirror-image) relief. When clamped onto the rotating machine cylinder and inked, they press directly into the sack to produce sharp, right-reading graphics.'
                     : 'The vulcanized rubber absorbs the mechanical shock of uneven woven polypropylene tapes, pushing ink smoothly into the fabric without clogging fine text.'}
                 </p>
               </div>
@@ -272,7 +272,7 @@ export default function PlateVisualizer() {
                 className="shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-stone-800 hover:bg-stone-700 text-stone-200 font-semibold border border-stone-700"
               >
                 <RefreshCw className="w-3.5 h-3.5" />
-                <span>Switch to {viewMode === 'stereo' ? 'Bag View' : 'Plate View'}</span>
+                <span>Switch to {viewMode === 'stereo' ? 'Bag View' : 'Stereo View'}</span>
               </button>
             </div>
 

@@ -21,7 +21,7 @@ export default function IndustriesServed({ onOpenQuote, onSelectCategory }: Indu
           </h2>
           <p className="text-stone-700 text-base sm:text-lg mt-3">
             Whether printing 50kg cattle feed sacks in Tamil Nadu, flour bags in Punjab, or fertilizer bags in Gujarat, 
-            Kwality Stereo builds plates tailored to your precise substrate and ink demands.
+            Kwality Stereo hand-engraves rubber stereos tailored to your precise substrate and ink demands.
           </p>
         </div>
 
@@ -99,7 +99,7 @@ export default function IndustriesServed({ onOpenQuote, onSelectCategory }: Indu
                   }}
                   className="text-xs font-bold text-stone-900 hover:text-amber-800 flex items-center gap-1.5"
                 >
-                  <span>View Sample Plates</span>
+                  <span>View Sample Stereos</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
 
@@ -135,7 +135,7 @@ export default function IndustriesServed({ onOpenQuote, onSelectCategory }: Indu
               <span>Call Mohan: {BUSINESS_INFO.phone}</span>
             </a>
             <a
-              href={`https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent('Hi Mohan, I have a custom bag printing plate inquiry.')}`}
+              href={`https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent('Hi Mohan, I have a custom bag printing rubber stereo inquiry.')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-xs sm:text-sm"

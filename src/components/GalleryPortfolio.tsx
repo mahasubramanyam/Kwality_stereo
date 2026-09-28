@@ -1,4 +1,23 @@
 import { useState } from 'react';
+import samrudhiImg from '../assets/images/real/samrudhi-stereo-hero.jpg';
+import starImg from '../assets/images/real/star-flourmill-stereo.jpg';
+import kohinoorImg from '../assets/images/real/kohinoor-flourmill-stereo.jpg';
+import copperImg from '../assets/images/real/copper-rubber-stereo-sheets.jpg';
+import bordersImg from '../assets/images/real/samrudhi-growmore-border-stereo.jpg';
+import tamilImg from '../assets/images/real/tamil-script-stereo.jpg';
+import punjabiImg from '../assets/images/real/punjabi-script-stereo.jpg';
+import suvarnaImg from '../assets/images/real/suvarna-printed-sack.jpg';
+
+const ITEM_PHOTOS: Record<string, { src: string; alt: string }> = {
+  'samrudhi-milk-gain': { src: samrudhiImg, alt: 'Real hand-engraved rubber stereo for Samrudhi Milk Gain cattle feed bag' },
+  'chunni-cattle-feed': { src: punjabiImg, alt: 'Real hand-engraved rubber stereo with Punjabi script and cattle artwork' },
+  'shri-hariom-gold': { src: suvarnaImg, alt: 'Real cattle feed woven sack printed from a Kwality Stereo rubber stereo' },
+  'star-flour-mill': { src: starImg, alt: 'Real engraved rubber stereo for Star Flour Mill cattle feed atta bag' },
+  'kohinoor-flour-mill': { src: kohinoorImg, alt: 'Real engraved rubber stereo for Kohinoor Flour Mill wheat bran bag' },
+  'multi-lang-tamil-punjabi-bengali': { src: tamilImg, alt: 'Real hand-engraved rubber stereo with Tamil script' },
+  'decorative-borders-collection': { src: bordersImg, alt: 'Real engraved rubber stereo with palm, banana and neem border artwork' },
+  'copper-rubber-standard-packs': { src: copperImg, alt: 'Real copper-tone engraved rubber stereo sheets, L30 x 10 packs' },
+};
 import { PORTFOLIO_ITEMS, PortfolioItem, BUSINESS_INFO } from '../data/businessData';
 import { Layers, CheckCircle2, ArrowRight, MessageCircle, Phone, X, Eye } from 'lucide-react';
 
@@ -19,7 +38,7 @@ export default function GalleryPortfolio({
     { id: 'all', label: 'All Sample Work' },
     { id: 'cattle-feed', label: 'Cattle Feed Stereos' },
     { id: 'flour-mill', label: 'Flour Mill / Atta Stereos' },
-    { id: 'multi-language', label: 'Multi-Language Plates' },
+    { id: 'multi-language', label: 'Multi-Language Stereos' },
     { id: 'borders-motifs', label: 'Decorative Borders' },
     { id: 'bulk-copper', label: 'Bulk Packs (L30x10)' }
   ];
@@ -39,10 +58,10 @@ export default function GalleryPortfolio({
             Proven Sample Portfolio
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold font-display tracking-tight text-stone-900">
-            Sample Rubber Stereos & Executed Bag Printing Plates
+            Sample Rubber Stereos We've Engraved for Bag Printing
           </h2>
           <p className="text-stone-600 text-base sm:text-lg mt-3">
-            Review reference plates produced for renowned cattle feed brands, flour mills, and regional grain packaging across India.
+            Review real rubber stereos, hand-cut and engraved, for cattle feed brands, flour mills, and regional grain packaging across India.
           </p>
         </div>
 
@@ -72,17 +91,26 @@ export default function GalleryPortfolio({
             >
               <div className="p-5 sm:p-6">
                 
-                {/* Visual Stamp representing the Vulcanized Rubber Plate */}
+                {/* Real photo of the engraved rubber stereo */}
+                {ITEM_PHOTOS[item.id] && (
+                  <img
+                    src={ITEM_PHOTOS[item.id].src}
+                    alt={ITEM_PHOTOS[item.id].alt}
+                    loading="lazy"
+                    className="w-full h-56 object-cover rounded-xl border border-stone-300 mb-4"
+                  />
+                )}
+                {!ITEM_PHOTOS[item.id] && (
                 <div className="relative rounded-xl bg-gradient-to-br from-[#8d3221] to-[#601a0f] p-4 text-stone-100 border border-[#b24632]/40 shadow-inner mb-4">
                   <div className="flex items-center justify-between text-[10px] font-mono text-red-200/70 border-b border-red-300/20 pb-1.5 mb-2">
                     <span>KS-ENGRAVED RELIEF</span>
                     <span>{item.sampleDetails.reliefDepth}</span>
                   </div>
                   
-                  {/* Mirrored Stamp Title to reflect real printing plate */}
+                  {/* Fallback mirrored stamp */}
                   <div className="text-center py-3">
                     <div className="text-[11px] font-mono text-amber-200 tracking-wider uppercase scale-x-[-1] inline-block opacity-80">
-                      VULCANIZED RUBBER PLATE
+                      ENGRAVED RUBBER STEREO
                     </div>
                     <div className="text-lg font-display font-black text-white tracking-tight uppercase scale-x-[-1] mt-0.5">
                       {item.clientBrand}
@@ -97,6 +125,7 @@ export default function GalleryPortfolio({
                     <span className="scale-x-[-1] inline-block">REPEAT CONFIRMED</span>
                   </div>
                 </div>
+                )}
 
                 {/* Unboxed clean metadata */}
                 <div className="flex items-center gap-2 text-xs text-amber-800 font-semibold mb-1">
@@ -147,7 +176,7 @@ export default function GalleryPortfolio({
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-stone-800 hover:text-amber-800"
                 >
                   <Eye className="w-4 h-4 text-amber-600" />
-                  <span>Inspect Plate Details</span>
+                  <span>Inspect Stereo Details</span>
                 </button>
 
                 <a
@@ -165,7 +194,7 @@ export default function GalleryPortfolio({
           ))}
         </div>
 
-        {/* Modal for Detailed Plate Inspection */}
+        {/* Modal for Detailed Stereo Inspection */}
         {activeModalItem && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs">
             <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-stone-300 shadow-2xl p-6 sm:p-8 space-y-6 text-left">
@@ -173,7 +202,7 @@ export default function GalleryPortfolio({
               <div className="flex items-start justify-between border-b border-stone-200 pb-4">
                 <div>
                   <div className="text-xs uppercase font-bold text-amber-800">
-                    Sample Plate Inspection
+                    Sample Stereo Inspection
                   </div>
                   <h3 className="text-xl sm:text-2xl font-bold font-display text-stone-900 mt-1">
                     {activeModalItem.title}
@@ -238,7 +267,7 @@ export default function GalleryPortfolio({
                   Performance Highlights
                 </h4>
                 <ul className="space-y-1.5 text-sm text-stone-700">
-                  {activeModalItem.plateFeatures.map((feat, fIdx) => (
+                  {activeModalItem.stereoFeatures.map((feat, fIdx) => (
                     <li key={fIdx} className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-amber-700 shrink-0" />
                       <span>{feat}</span>

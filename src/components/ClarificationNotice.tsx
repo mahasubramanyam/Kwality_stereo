@@ -19,7 +19,7 @@ export default function ClarificationNotice() {
             </div>
             <p className="text-xs sm:text-sm text-stone-700 mt-0.5 leading-relaxed">
               <strong className="text-stone-900">Kwality Stereo</strong> specializes exclusively in custom-engraved, vulcanized 
-              rubber printing plates (known as <em>rubber stereos</em> or flexo stereo blocks) used on rotogravure and flexographic printing machines 
+              rubber blocks — hand-carved in deep relief and known as <em>rubber stereos</em> or flexo stereo blocks — used on rotogravure and flexographic printing machines 
               to print logos, borders, and specifications directly onto <strong className="text-stone-900">woven PP/HDPE sacks and packaging bags</strong>.
             </p>
           </div>
@@ -28,7 +28,7 @@ export default function ClarificationNotice() {
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-stone-700 bg-white/70 backdrop-blur-xs p-2.5 rounded-lg border border-amber-500/20 shrink-0">
           <div className="flex items-center gap-1.5 text-emerald-800 font-medium">
             <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-            <span>Woven Bag Printing Plates</span>
+            <span>Woven Bag Printing Stereos</span>
           </div>
           <div className="flex items-center gap-1.5 text-stone-400">
             <XCircle className="w-4 h-4 text-stone-400" />

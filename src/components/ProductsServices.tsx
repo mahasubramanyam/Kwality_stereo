@@ -25,7 +25,7 @@ export default function ProductsServices({ onOpenQuote }: ProductsServicesProps)
               Rubber Stereos Built Specifically for Flexo & Rotogravure Bag Presses
             </h2>
             <p className="text-stone-600 text-base sm:text-lg mt-3">
-              Every plate is custom-vulcanized with deep reliefs and formulated specifically for the abrasive weave of PP & HDPE sack packaging.
+              Every stereo is hand-carved from custom-vulcanized rubber with deep reliefs, formulated specifically for the abrasive weave of PP & HDPE sack packaging.
             </p>
           </div>
 
@@ -97,14 +97,14 @@ export default function ProductsServices({ onOpenQuote }: ProductsServicesProps)
           })}
         </div>
 
-        {/* Technical Stereo Plate Specification Table */}
+        {/* Technical Stereo Specification Table */}
         <div className="mt-14 bg-stone-900 text-stone-100 rounded-2xl p-6 sm:p-8 border border-stone-800">
           <div className="max-w-2xl mb-6">
             <span className="text-xs font-bold uppercase tracking-wider text-amber-400">
               Technical Specifications
             </span>
             <h3 className="text-xl sm:text-2xl font-bold font-display text-white mt-1">
-              Standard Plate Gauges, Hardness & Mountings
+              Standard Stereo Gauges, Hardness & Mountings
             </h3>
             <p className="text-xs sm:text-sm text-stone-400 mt-1">
               Standardized manufacturing parameters calibrated for Indian sack printing machinery.
@@ -123,7 +123,7 @@ export default function ProductsServices({ onOpenQuote }: ProductsServicesProps)
               </thead>
               <tbody className="divide-y divide-stone-800 text-stone-300">
                 <tr>
-                  <td className="py-3 px-4 font-semibold text-white">Overall Plate Thickness</td>
+                  <td className="py-3 px-4 font-semibold text-white">Overall Stereo Thickness</td>
                   <td className="py-3 px-4">6.35mm / 7.0mm (heavy gauge)</td>
                   <td className="py-3 px-4">4.7mm / 5.5mm (precision)</td>
                   <td className="py-3 px-4">L30 standard copper/rubber base</td>

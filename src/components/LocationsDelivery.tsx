@@ -201,7 +201,7 @@ export default function LocationsDelivery() {
           <div className="mt-8 pt-6 border-t border-stone-800 flex flex-wrap items-center justify-between gap-4 text-xs text-stone-400">
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-amber-400" />
-              <span>Transit Insurance Available on Bulk Plate Shipments</span>
+              <span>Transit Insurance Available on Bulk Stereo Shipments</span>
             </div>
             <div className="flex flex-wrap items-center gap-3 font-semibold text-stone-300">
               <span>Logistics Partners:</span>

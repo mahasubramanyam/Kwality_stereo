@@ -9,7 +9,7 @@ export interface PortfolioItem {
   languages: string[];
   description: string;
   borderElements?: string[];
-  plateFeatures: string[];
+  stereoFeatures: string[];
   sampleDetails: {
     reliefDepth: string;
     pressType: string;
@@ -30,14 +30,14 @@ export interface Industry {
 
 export const BUSINESS_INFO = {
   name: 'Kwality Stereo',
-  tagline: 'Rubber Printing Plate Manufacturer for Packaging Bags',
+  tagline: 'Rubber Stereo Manufacturer for Packaging Bags',
   founder: 'Mohan',
   phone: '90490 98150',
   phoneRaw: '9049098150',
   phoneTel: '+919049098150',
   email: 'saimohan361991@gmail.com',
   whatsappNumber: '919049098150',
-  whatsappDefaultMsg: 'Hello Mohan ji, I need custom rubber printing plates (stereos) for packaging bags. Please share details and pricing.',
+  whatsappDefaultMsg: 'Hello Mohan ji, I need custom engraved rubber stereos for packaging bags. Please share details and pricing.',
   primaryLocation: {
     city: 'Krishnagiri',
     state: 'Tamil Nadu',
@@ -68,7 +68,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     languages: ['Hindi', 'English', 'Marathi'],
     description: 'Engineered for high-speed rotogravure / flexo roll-to-roll sack printing presses. Crisp reproduction of milch cow and calf illustration with milk bucket symbols and nutritional analysis table.',
     borderElements: ['Sugarcane Stalks', 'Wheat Sheaves', 'Heavy Solid Edge Rims'],
-    plateFeatures: [
+    stereoFeatures: [
       'Anti-ghosting relief engraving',
       'Solid ink laydown on rough HDPE tape texture',
       'Reinforced backing for 250,000+ sack impressions'
@@ -81,16 +81,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   },
   {
     id: 'chunni-cattle-feed',
-    title: 'Chunni — Traditional Cattle Feed & By-product Bag Plate',
+    title: 'Chunni — Traditional Cattle Feed & By-product Bag Stereo',
     clientBrand: 'Chunni Special Cattle Feed',
     category: 'cattle-feed',
     bagType: '40 Kg / 50 Kg Woven Sack',
     dimensions: '21" x 36"',
     stereoType: 'Heavy-Gauge Red Rubber Stereo with Micro-Tension Mounting',
     languages: ['Hindi', 'Punjabi', 'English'],
-    description: 'Custom plate created for regional dairy cattle feeds. Features ornate traditional agricultural borders with high-contrast Hindi and Gurmukhi/Punjabi typography.',
+    description: 'Custom rubber stereo hand-engraved for regional dairy cattle feeds. Features ornate traditional agricultural borders with high-contrast Hindi and Gurmukhi/Punjabi typography.',
     borderElements: ['Corn Cobs', 'Wheat Ears', 'Decorative Floral Swag'],
-    plateFeatures: [
+    stereoFeatures: [
       'Bold headline retention without ink bleeding',
       'Dedicated batch / date stamp cutout socket',
       'High resistance to solvent and water-based flexo inks'
@@ -110,9 +110,9 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     dimensions: '23" x 39"',
     stereoType: '2-Color Registered Rubber Stereo Set (Cyan / Red separation)',
     languages: ['Hindi', 'Gujarati', 'English'],
-    description: 'Twin-color matched stereo plates designed for precise register alignment on multi-color bag printing presses. Emphasizes the embossed Gold seal and dairy yield graphs.',
+    description: 'Twin-color matched rubber stereos designed for precise register alignment on multi-color bag printing presses. Emphasizes the embossed Gold seal and dairy yield graphs.',
     borderElements: ['Healthy Cattle Silhouette', 'Lush Pasture Grass', 'Sunburst Pattern'],
-    plateFeatures: [
+    stereoFeatures: [
       'Color-to-color register pin alignment marks',
       'Fine-line text reproduction on woven sack grain',
       'Zero shrinkage vulcanization formulation'
@@ -134,7 +134,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     languages: ['English', 'Hindi', 'Bengali'],
     description: 'Clean typographic layout with intricate wheat stalks flanking the central Star emblem. Formulated specifically to prevent ink filling in fine Bengali script loops.',
     borderElements: ['Wheat Sheaf Garland', 'Star Medallion Crest', 'Golden Grain Waves'],
-    plateFeatures: [
+    stereoFeatures: [
       'Ultra-sharp glyph edges for intricate eastern scripts',
       'FSSAI license number and nutritional value matrix',
       'Uniform thickness tolerance within ±0.03mm'
@@ -156,10 +156,10 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     languages: ['English', 'Punjabi', 'Hindi'],
     description: 'Premium milling brand stereo featuring royal diamond filigree and dense text layout. Guaranteed smooth ink transfer even across uneven woven tape ridges.',
     borderElements: ['Wheat Ears', 'Ornate Diamond Corners', 'Traditional Flour Sieve Crest'],
-    plateFeatures: [
+    stereoFeatures: [
       'Deep relief valleys preventing background smudging',
       'Durable for over 300,000 continuous bag impressions',
-      'Easy cleanup with standard plate wash solutions'
+      'Easy cleanup with standard rubber stereo wash solutions'
     ],
     sampleDetails: {
       reliefDepth: '3.5mm deep floor',
@@ -174,11 +174,11 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     category: 'multi-language',
     bagType: '25kg to 50kg Multi-lingual Woven Sacks',
     dimensions: 'Standard Repeat Sizes (600mm to 1200mm)',
-    stereoType: 'Multi-Script Custom Master Engraved Plates',
+    stereoType: 'Multi-Script Custom Master Engraved Rubber Blocks',
     languages: ['Tamil', 'Punjabi', 'Hindi', 'Bengali', 'Kannada', 'Telugu'],
     description: 'Dedicated multi-script typesetting and rubber mold engraving. We accurately engineer native glyph accents, sub-scripts, and diacritics in Tamil, Gurmukhi, Devanagari, and Bengali without breaking on high-speed press runs.',
     borderElements: ['Sugarcane', 'Palm Trees', 'Corn', 'Paddy/Rice Ears'],
-    plateFeatures: [
+    stereoFeatures: [
       'Native typographical proofing before casting',
       'Reinforced character stems to prevent clipping',
       'Uniform kiss-pressure compatibility'
@@ -196,11 +196,11 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     category: 'borders-motifs',
     bagType: 'All Sack Packaging Formats',
     dimensions: 'Modular Border Strips & Corner Elements',
-    stereoType: 'Heavy Relief Continuous & Corner Plate Elements',
+    stereoType: 'Heavy Relief Continuous & Corner Stereo Elements',
     languages: ['Iconographic / Universal'],
-    description: 'Pre-engineered and custom decorative border plates: ripe corn, golden wheat sheaves, lush sugarcane stalks, coastal palm trees, and proud cattle silhouettes that give woven packaging instant shelf distinction in mandi markets.',
+    description: 'Pre-engineered and custom decorative border stereos: ripe corn, golden wheat sheaves, lush sugarcane stalks, coastal palm trees, and proud cattle silhouettes that give woven packaging instant shelf distinction in mandi markets.',
     borderElements: ['Corn Stalks', 'Wheat Ears', 'Sugarcane Canes', 'Palm Trees', 'Dairy Cows'],
-    plateFeatures: [
+    stereoFeatures: [
       'Continuous repeat border patterns without visible seams',
       'Heavy rubber wall thickness for rugged shop-floor handling',
       'Custom corner interlocks for swift cylinder mounting'
@@ -218,11 +218,11 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     category: 'bulk-copper',
     bagType: 'Standard & High-Volume Industrial Bag Runs',
     dimensions: 'L30 x 10 Packs & Custom Repeat Cylinders',
-    stereoType: 'Composite Copper-Backed & Pure Vulcanized Rubber Plates',
+    stereoType: 'Composite Copper-Backed & Pure Vulcanized Rubber Stereos',
     languages: ['Customizable'],
     description: 'Precision manufactured copper/rubber stereos in standard industrial sizing such as L30 x 10 packs. Combines the dimensional stability of copper backing with the flexible, ink-receptive cushioning of vulcanized rubber.',
     borderElements: ['Industrial Alignment Grids', 'Edge Locking Rims'],
-    plateFeatures: [
+    stereoFeatures: [
       'L30 x 10 standard size packs ready for swift dispatch',
       'Superior dimensional stability under cylinder tension',
       'Ideal for heavy repeat runs and high-volume bag mills'
@@ -270,7 +270,7 @@ export const INDUSTRIES: Industry[] = [
     id: 'agri-fertilizer',
     title: 'Agricultural & Fertilizer Packaging',
     subtitle: 'Heavy-duty chemical-resistant stereos for urea, DAP, NPK & seed bags',
-    description: 'Fertilizer and agrochemical bags carry mandatory government regulatory disclosures, hazard warnings, chemical formulas, and batch barcodes. Our plates ensure 100% legibility and zero distortion even on heavy HDPE woven sacks.',
+    description: 'Fertilizer and agrochemical bags carry mandatory government regulatory disclosures, hazard warnings, chemical formulas, and batch barcodes. Our stereos ensure 100% legibility and zero distortion even on heavy HDPE woven sacks.',
     commonBagSizes: ['45 Kg / 50 Kg Urea & DAP bags', '25 Kg micro-nutrient sack', '10 Kg hybrid seed bag'],
     typicalDesigns: ['Government subsidy disclosure boxes', 'Hazard & handling symbols', 'Batch/MRP/Exp tracking boxes', 'Crop illustrations (paddy, cotton, cane)'],
     challengesSolved: 'Tough solvent-proof vulcanized rubber retains razor-sharp linework through harsh industrial washdowns.',
@@ -281,7 +281,7 @@ export const INDUSTRIES: Industry[] = [
 export const CORE_SERVICES = [
   {
     title: 'Custom Rubber Stereo Engraving',
-    description: 'Precision manufactured rubber printing plates (stereos) custom engraved to exact bag repeat lengths. Vulcanized natural and synthetic rubber formulations tailored for coarse woven sack texture.',
+    description: 'Precision hand-cut and engraved rubber stereos, custom-carved to exact bag repeat lengths. Vulcanized natural and synthetic rubber formulations tailored for coarse woven sack texture.',
     badge: 'Core Specialty',
     points: [
       'Custom floor relief depths (2.8mm to 4.0mm)',
@@ -290,7 +290,7 @@ export const CORE_SERVICES = [
     ]
   },
   {
-    title: 'Multi-Language Plate Typesetting',
+    title: 'Multi-Language Stereo Typesetting',
     description: 'Complete in-house design and engraving in all major Indian regional languages including Tamil, Hindi, Punjabi, Bengali, Kannada, Telugu, Gujarati, and Marathi.',
     badge: 'Native Indian Scripts',
     points: [
@@ -300,12 +300,12 @@ export const CORE_SERVICES = [
     ]
   },
   {
-    title: 'Bulk Plate Manufacturing & Standard Packs',
-    description: 'High-volume production capacity for bag manufacturers and flexo printing presses. We supply standard packs like L30 x 10 packs as well as custom repeat continuous plates.',
+    title: 'Bulk Stereo Manufacturing & Standard Packs',
+    description: 'High-volume production capacity for bag manufacturers and flexo printing presses. We supply standard packs like L30 x 10 packs as well as custom repeat continuous stereos.',
     badge: 'Volume Ready',
     points: [
       'Standard L30 x 10 packs always in rotation',
-      'Consistent gauge calibration across every plate',
+      'Consistent gauge calibration across every stereo',
       'Fast turnaround for repeat batch orders'
     ]
   },
@@ -325,7 +325,7 @@ export const CORE_SERVICES = [
     badge: 'Interchangeable Sockets',
     points: [
       'Dovetail and slot-mounted date plugs',
-      'Quick swap without removing the entire master plate',
+      'Quick swap without removing the entire master stereo',
       'Reduces downtime on high-volume packing lines'
     ]
   },
@@ -344,7 +344,7 @@ export const CORE_SERVICES = [
 export const FAQS = [
   {
     question: 'What exactly is a rubber stereo in the packaging industry?',
-    answer: 'A rubber stereo is an industrial engraved rubber printing plate (also known as a flexo rubber block or rotogravure printing plate). It is mounted on the printing cylinder of a bag printing machine to transfer ink onto woven PP (polypropylene) and HDPE (high-density polyethylene) sacks. It is NOT an audio stereo, speaker, tire, or rubber gasket. It is an industrial printing tool specifically for packaging bags.'
+    answer: 'A rubber stereo is a block of vulcanized rubber into which a design — logos, text, borders, tables — is hand-cut and engraved in relief (also known as a flexo rubber block). It is mounted on the printing cylinder of a bag printing machine to transfer ink onto woven PP (polypropylene) and HDPE (high-density polyethylene) sacks. It is NOT an audio stereo, speaker, tire, or rubber gasket. It is an industrial printing tool specifically for packaging bags.'
   },
   {
     question: 'Which industries and bag types do your rubber stereos cater to?',
@@ -352,7 +352,7 @@ export const FAQS = [
   },
   {
     question: 'Can you engrave stereos in regional Indian languages like Tamil, Punjabi, Hindi, and Bengali?',
-    answer: 'Yes, absolutely! We specialize in multi-language plate engraving. Whether you need Tamil disclaimers for Krishnagiri/Tamil Nadu, Gurmukhi/Punjabi for Punjab grain mandis, Devanagari/Hindi for North India, or Bengali for Eastern mills, we accurately typeset and engrave every script with sharp legibility.'
+    answer: 'Yes, absolutely! We specialize in multi-language rubber stereo engraving. Whether you need Tamil disclaimers for Krishnagiri/Tamil Nadu, Gurmukhi/Punjabi for Punjab grain mandis, Devanagari/Hindi for North India, or Bengali for Eastern mills, we accurately typeset and hand-engrave every script with sharp legibility.'
   },
   {
     question: 'How do you handle delivery across India from Krishnagiri and Bangalore?',
@@ -364,6 +364,6 @@ export const FAQS = [
   },
   {
     question: 'Do you supply standard sizes like L30 x 10 packs?',
-    answer: 'Yes! We manufacture standard sizes including L30 x 10 packs, copper/rubber composite plates, and custom thickness plates (e.g. 4.7mm, 6.35mm, 7mm) designed for standard flexo sack printing cylinders.'
+    answer: 'Yes! We manufacture standard sizes including L30 x 10 packs, copper/rubber composite stereos, and custom thickness rubber stereos (e.g. 4.7mm, 6.35mm, 7mm) designed for standard flexo sack printing cylinders.'
   }
 ];

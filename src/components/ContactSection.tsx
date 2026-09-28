@@ -40,7 +40,7 @@ Requirements: ${formState.message || 'Please share catalog and price list for ru
             Contact Mohan for Rubber Stereo Quotes & Technical Drawings
           </h2>
           <p className="text-stone-600 text-base sm:text-lg mt-3">
-            Whether you need a new master plate set for a cattle feed launch, custom Tamil/Punjabi language stereos, or standard L30x10 packs, call or message directly.
+            Whether you need a new master rubber stereo set for a cattle feed launch, custom Tamil/Punjabi language stereos, or standard L30x10 packs, call or message directly.
           </p>
         </div>
 
@@ -256,7 +256,7 @@ Requirements: ${formState.message || 'Please share catalog and price list for ru
                       <option value="Poultry Feed Bag">Poultry Feed (Broiler / Layer Sacks)</option>
                       <option value="Fertilizer / Agro Chemical">Fertilizer / Agri / Seeds (HDPE Sacks)</option>
                       <option value="Standard L30x10 Packs">Standard L30 x 10 Pack Orders</option>
-                      <option value="Multi-Language Custom Plate">Multi-Language Regional Script Plates</option>
+                      <option value="Multi-Language Custom Stereo">Multi-Language Regional Script Stereos</option>
                       <option value="Other Packaging Sack">Other Woven Bag Requirement</option>
                     </select>
                   </div>
@@ -308,7 +308,7 @@ Requirements: ${formState.message || 'Please share catalog and price list for ru
               Technical FAQ
             </span>
             <h3 className="text-2xl sm:text-3xl font-bold font-display text-stone-900 mt-1">
-              Frequently Asked Questions on Bag Printing Plates
+              Frequently Asked Questions on Bag Printing Rubber Stereos
             </h3>
           </div>
 
