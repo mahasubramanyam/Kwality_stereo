@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Header from './components/Header';
-import ClarificationNotice from './components/ClarificationNotice';
 import Hero from './components/Hero';
 import AboutUs from './components/AboutUs';
 import ProductsServices from './components/ProductsServices';
@@ -35,12 +34,9 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-stone-50 text-stone-900 pb-14 sm:pb-0">
+    <div className="min-h-screen flex flex-col bg-paper text-ink pb-14 sm:pb-0">
       {/* Header with Navigation & Call Actions */}
       <Header onOpenQuote={scrollToQuoteEstimator} />
-
-      {/* Industrial Clarification Banner */}
-      <ClarificationNotice />
 
       <main className="flex-grow">
         {/* Hero Section */}

@@ -343,8 +343,8 @@ export const CORE_SERVICES = [
 
 export const FAQS = [
   {
-    question: 'What exactly is a rubber stereo in the packaging industry?',
-    answer: 'A rubber stereo is a block of vulcanized rubber into which a design — logos, text, borders, tables — is hand-cut and engraved in relief (also known as a flexo rubber block). It is mounted on the printing cylinder of a bag printing machine to transfer ink onto woven PP (polypropylene) and HDPE (high-density polyethylene) sacks. It is NOT an audio stereo, speaker, tire, or rubber gasket. It is an industrial printing tool specifically for packaging bags.'
+    question: 'What exactly is a rubber stereo?',
+    answer: 'A rubber stereo is an engraved vulcanized rubber printing plate mounted on flexographic and rotogravure presses to print brand logos, borders, and specifications directly onto woven PP and HDPE packaging sacks (not tires, gaskets, or audio equipment).'
   },
   {
     question: 'Which industries and bag types do your rubber stereos cater to?',
